@@ -123,12 +123,8 @@ class OutputBuffer:
                     "width": win_width,
                     "height": min(win_height - win_row, lineno + 1),
                     "anchor": "NW",
-                    "style": None
-                    if self.options.output_window_borders
-                    else "minimal",
-                    "border": "rounded"
-                    if self.options.output_window_borders
-                    else "none",
+                    "style": "minimal",
+                    "border": "rounded",
                     "focusable": False,
                 },
             )
